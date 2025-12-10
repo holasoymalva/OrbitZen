@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAF37E232EE9E3D800D63C1D /* OrbitZen Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AAF37E222EE9E3D800D63C1D /* OrbitZen Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAF37E242EE9E3D800D63C1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAF37E162EE9E3D800D63C1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF37E212EE9E3D800D63C1D;
+			remoteInfo = "OrbitZen Watch App";
+		};
+		AAF37E352EE9E3DA00D63C1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAF37E162EE9E3D800D63C1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF37E212EE9E3D800D63C1D;
+			remoteInfo = "OrbitZen Watch App";
+		};
+		AAF37E3F2EE9E3DA00D63C1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAF37E162EE9E3D800D63C1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF37E212EE9E3D800D63C1D;
+			remoteInfo = "OrbitZen Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAF37E4B2EE9E3DA00D63C1D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AAF37E232EE9E3D800D63C1D /* OrbitZen Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AAF37E1C2EE9E3D800D63C1D /* OrbitZen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrbitZen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF37E222EE9E3D800D63C1D /* OrbitZen Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OrbitZen Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF37E342EE9E3DA00D63C1D /* OrbitZen Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OrbitZen Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF37E3E2EE9E3DA00D63C1D /* OrbitZen Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OrbitZen Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AAF37E262EE9E3D800D63C1D /* OrbitZen Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "OrbitZen Watch App";
+			sourceTree = "<group>";
+		};
+		AAF37E372EE9E3DA00D63C1D /* OrbitZen Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "OrbitZen Watch AppTests";
+			sourceTree = "<group>";
+		};
+		AAF37E412EE9E3DA00D63C1D /* OrbitZen Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "OrbitZen Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAF37E1F2EE9E3D800D63C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF37E312EE9E3DA00D63C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF37E3B2EE9E3DA00D63C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAF37E152EE9E3D800D63C1D = {
+			isa = PBXGroup;
+			children = (
+				AAF37E262EE9E3D800D63C1D /* OrbitZen Watch App */,
+				AAF37E372EE9E3DA00D63C1D /* OrbitZen Watch AppTests */,
+				AAF37E412EE9E3DA00D63C1D /* OrbitZen Watch AppUITests */,
+				AAF37E1D2EE9E3D800D63C1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAF37E1D2EE9E3D800D63C1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAF37E1C2EE9E3D800D63C1D /* OrbitZen.app */,
+				AAF37E222EE9E3D800D63C1D /* OrbitZen Watch App.app */,
+				AAF37E342EE9E3DA00D63C1D /* OrbitZen Watch AppTests.xctest */,
+				AAF37E3E2EE9E3DA00D63C1D /* OrbitZen Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAF37E1B2EE9E3D800D63C1D /* OrbitZen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF37E4C2EE9E3DA00D63C1D /* Build configuration list for PBXNativeTarget "OrbitZen" */;
+			buildPhases = (
+				AAF37E1A2EE9E3D800D63C1D /* Resources */,
+				AAF37E4B2EE9E3DA00D63C1D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF37E252EE9E3D800D63C1D /* PBXTargetDependency */,
+			);
+			name = OrbitZen;
+			packageProductDependencies = (
+			);
+			productName = OrbitZen;
+			productReference = AAF37E1C2EE9E3D800D63C1D /* OrbitZen.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		AAF37E212EE9E3D800D63C1D /* OrbitZen Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF37E482EE9E3DA00D63C1D /* Build configuration list for PBXNativeTarget "OrbitZen Watch App" */;
+			buildPhases = (
+				AAF37E1E2EE9E3D800D63C1D /* Sources */,
+				AAF37E1F2EE9E3D800D63C1D /* Frameworks */,
+				AAF37E202EE9E3D800D63C1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AAF37E262EE9E3D800D63C1D /* OrbitZen Watch App */,
+			);
+			name = "OrbitZen Watch App";
+			packageProductDependencies = (
+			);
+			productName = "OrbitZen Watch App";
+			productReference = AAF37E222EE9E3D800D63C1D /* OrbitZen Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAF37E332EE9E3DA00D63C1D /* OrbitZen Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF37E4F2EE9E3DA00D63C1D /* Build configuration list for PBXNativeTarget "OrbitZen Watch AppTests" */;
+			buildPhases = (
+				AAF37E302EE9E3DA00D63C1D /* Sources */,
+				AAF37E312EE9E3DA00D63C1D /* Frameworks */,
+				AAF37E322EE9E3DA00D63C1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF37E362EE9E3DA00D63C1D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AAF37E372EE9E3DA00D63C1D /* OrbitZen Watch AppTests */,
+			);
+			name = "OrbitZen Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "OrbitZen Watch AppTests";
+			productReference = AAF37E342EE9E3DA00D63C1D /* OrbitZen Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAF37E3D2EE9E3DA00D63C1D /* OrbitZen Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF37E522EE9E3DA00D63C1D /* Build configuration list for PBXNativeTarget "OrbitZen Watch AppUITests" */;
+			buildPhases = (
+				AAF37E3A2EE9E3DA00D63C1D /* Sources */,
+				AAF37E3B2EE9E3DA00D63C1D /* Frameworks */,
+				AAF37E3C2EE9E3DA00D63C1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF37E402EE9E3DA00D63C1D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AAF37E412EE9E3DA00D63C1D /* OrbitZen Watch AppUITests */,
+			);
+			name = "OrbitZen Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "OrbitZen Watch AppUITests";
+			productReference = AAF37E3E2EE9E3DA00D63C1D /* OrbitZen Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAF37E162EE9E3D800D63C1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					AAF37E1B2EE9E3D800D63C1D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					AAF37E212EE9E3D800D63C1D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					AAF37E332EE9E3DA00D63C1D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = AAF37E212EE9E3D800D63C1D;
+					};
+					AAF37E3D2EE9E3DA00D63C1D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = AAF37E212EE9E3D800D63C1D;
+					};
+				};
+			};
+			buildConfigurationList = AAF37E192EE9E3D800D63C1D /* Build configuration list for PBXProject "OrbitZen" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAF37E152EE9E3D800D63C1D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AAF37E1D2EE9E3D800D63C1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAF37E1B2EE9E3D800D63C1D /* OrbitZen */,
+				AAF37E212EE9E3D800D63C1D /* OrbitZen Watch App */,
+				AAF37E332EE9E3DA00D63C1D /* OrbitZen Watch AppTests */,
+				AAF37E3D2EE9E3DA00D63C1D /* OrbitZen Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAF37E1A2EE9E3D800D63C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF37E202EE9E3D800D63C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF37E322EE9E3DA00D63C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF37E3C2EE9E3DA00D63C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAF37E1E2EE9E3D800D63C1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF37E302EE9E3DA00D63C1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF37E3A2EE9E3DA00D63C1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAF37E252EE9E3D800D63C1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF37E212EE9E3D800D63C1D /* OrbitZen Watch App */;
+			targetProxy = AAF37E242EE9E3D800D63C1D /* PBXContainerItemProxy */;
+		};
+		AAF37E362EE9E3DA00D63C1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF37E212EE9E3D800D63C1D /* OrbitZen Watch App */;
+			targetProxy = AAF37E352EE9E3DA00D63C1D /* PBXContainerItemProxy */;
+		};
+		AAF37E402EE9E3DA00D63C1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF37E212EE9E3D800D63C1D /* OrbitZen Watch App */;
+			targetProxy = AAF37E3F2EE9E3DA00D63C1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AAF37E462EE9E3DA00D63C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAF37E472EE9E3DA00D63C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AAF37E492EE9E3DA00D63C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OrbitZen Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = TUM2AVRA9B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = OrbitZen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studioMalva.OrbitZen.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		AAF37E4A2EE9E3DA00D63C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OrbitZen Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = TUM2AVRA9B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = OrbitZen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studioMalva.OrbitZen.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		AAF37E4D2EE9E3DA00D63C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TUM2AVRA9B;
+				INFOPLIST_KEY_CFBundleDisplayName = OrbitZen;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studioMalva.OrbitZen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AAF37E4E2EE9E3DA00D63C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TUM2AVRA9B;
+				INFOPLIST_KEY_CFBundleDisplayName = OrbitZen;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studioMalva.OrbitZen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAF37E502EE9E3DA00D63C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TUM2AVRA9B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "studioMalva.OrbitZen-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrbitZen Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OrbitZen Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		AAF37E512EE9E3DA00D63C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TUM2AVRA9B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "studioMalva.OrbitZen-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrbitZen Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OrbitZen Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		AAF37E532EE9E3DA00D63C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TUM2AVRA9B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "studioMalva.OrbitZen-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "OrbitZen Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		AAF37E542EE9E3DA00D63C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TUM2AVRA9B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "studioMalva.OrbitZen-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "OrbitZen Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAF37E192EE9E3D800D63C1D /* Build configuration list for PBXProject "OrbitZen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF37E462EE9E3DA00D63C1D /* Debug */,
+				AAF37E472EE9E3DA00D63C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF37E482EE9E3DA00D63C1D /* Build configuration list for PBXNativeTarget "OrbitZen Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF37E492EE9E3DA00D63C1D /* Debug */,
+				AAF37E4A2EE9E3DA00D63C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF37E4C2EE9E3DA00D63C1D /* Build configuration list for PBXNativeTarget "OrbitZen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF37E4D2EE9E3DA00D63C1D /* Debug */,
+				AAF37E4E2EE9E3DA00D63C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF37E4F2EE9E3DA00D63C1D /* Build configuration list for PBXNativeTarget "OrbitZen Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF37E502EE9E3DA00D63C1D /* Debug */,
+				AAF37E512EE9E3DA00D63C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF37E522EE9E3DA00D63C1D /* Build configuration list for PBXNativeTarget "OrbitZen Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF37E532EE9E3DA00D63C1D /* Debug */,
+				AAF37E542EE9E3DA00D63C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAF37E162EE9E3D800D63C1D /* Project object */;
+}
