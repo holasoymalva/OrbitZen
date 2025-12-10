@@ -77,6 +77,9 @@ class GameScene: SKScene {
         orb.addChild(glow)
         addChild(orb)
         
+        // Add Comet Trail
+        setupTrail()
+        
         // UI: Title ORBIT
         titleOrbit = SKLabelNode(fontNamed: "HelveticaNeue-CondensedBlack")
         titleOrbit.fontSize = 32
@@ -221,12 +224,25 @@ class GameScene: SKScene {
         let oy = sin(orbAngle) * orbitRadius
         orb.position = CGPoint(x: ox, y: oy)
         
+        // Update Trail Rotation to face opposite of movement
+        // Tangent angle + 180 degrees
+        // Tangent of circle at angle theta is theta + pi/2
+        // So opposite is theta + pi/2 + pi = theta - pi/2
+        if let trail = orb.childNode(withName: "trail") as? SKEmitterNode {
+            let rotation = orbAngle + (orbDirection > 0 ? CGFloat.pi / 2 : -CGFloat.pi / 2)
+            trail.emissionAngle = rotation + CGFloat.pi // Shoot backwards
+        }
+        
         // Color cycle
         let hue = CGFloat(frames % 360) / 360.0
         let newColor = UIColor(hue: hue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
         orb.fillColor = newColor
         if let glow = orb.children.first as? SKShapeNode {
             glow.fillColor = newColor.withAlphaComponent(0.4)
+        }
+        // Update trail color too
+        if let trail = orb.childNode(withName: "trail") as? SKEmitterNode {
+            trail.particleColor = newColor
         }
         
         // 2. Spawn Obstacles
@@ -238,6 +254,8 @@ class GameScene: SKScene {
         // 3. Update Obstacles & Collision
         updateObstacles()
     }
+    
+
     
     func spawnObstacle() {
         let gapSize = max(CGFloat.pi / 4, CGFloat.pi / 1.5 - (CGFloat(score) * 0.01))
@@ -325,43 +343,80 @@ class GameScene: SKScene {
         return diff
     }
     
+    func setupTrail() {
+        let trail = SKEmitterNode()
+        trail.name = "trail"
+        trail.targetNode = self // Particles stay in world space
+        
+        // Use a simple blurred circle for smooth light trail
+        if let particleImage = UIImage(systemName: "circle.fill") {
+             trail.particleTexture = SKTexture(image: particleImage)
+        } else {
+             trail.particleTexture = createSparkTexture()
+        }
+        
+        trail.particleBirthRate = 60
+        trail.particleLifetime = 0.4
+        trail.particleLifetimeRange = 0.1
+        trail.particlePositionRange = CGVector(dx: 2, dy: 2)
+        
+        // Movement: The particles should just "stay" and fade, effectively creating a trail as emitter moves
+        trail.particleSpeed = 0
+        trail.particleAlpha = 0.6
+        trail.particleAlphaSpeed = -1.5
+        trail.particleScale = 0.08
+        trail.particleScaleSpeed = -0.1 // Shrink over time
+        trail.particleColorBlendFactor = 1.0
+        trail.particleColor = .cyan // Will be updated in loop
+        
+        orb.addChild(trail)
+    }
+
     func createExplosion(at point: CGPoint, color: UIColor) {
+        // 1. Star Burst Particles
         let emitter = SKEmitterNode()
-        // Use a reliable system image for the spark texture
         if let starImage = UIImage(systemName: "star.fill") {
             emitter.particleTexture = SKTexture(image: starImage)
         } else {
-             // Fallback if SF Symbols fail (unlikely)
             emitter.particleTexture = createSparkTexture()
         }
         
-        // Emitter configuration for a 360-degree explosion
-        emitter.particleBirthRate = 2000 // High rate to emit all particles instantly (Burst)
-        emitter.numParticlesToEmit = 50
+        emitter.particleBirthRate = 2000 
+        emitter.numParticlesToEmit = 60
         emitter.particleLifetime = 0.8
-        emitter.particleLifetimeRange = 0.3
-        
-        // Physics of the explosion
-        emitter.emissionAngle = 0
-        emitter.emissionAngleRange = .pi * 2 // 360 degrees
-        emitter.particleSpeed = 60
+        emitter.emissionAngleRange = .pi * 2
+        emitter.particleSpeed = 70
         emitter.particleSpeedRange = 30
-        
-        // Appearance
         emitter.particleColorBlendFactor = 1.0
         emitter.particleColor = color
-        emitter.particleScale = 0.1
-        emitter.particleScaleRange = 0.05
-        emitter.particleAlpha = 1.0
-        emitter.particleAlphaSpeed = -1.2 // Fade out
-        
+        emitter.particleScale = 0.12
+        emitter.particleScaleSpeed = -0.1
+        emitter.particleAlphaSpeed = -1.0
         emitter.position = point
         addChild(emitter)
         
-        // Remove the emitter after particles die to clean up memory
-        let wait = SKAction.wait(forDuration: 1.5)
-        let remove = SKAction.removeFromParent()
-        emitter.run(SKAction.sequence([wait, remove]))
+        let removeEmitter = SKAction.sequence([.wait(forDuration: 1.5), .removeFromParent()])
+        emitter.run(removeEmitter)
+        
+        // 2. Expanding Shockwaves (Hondas)
+        for i in 0..<3 {
+            let ripple = SKShapeNode(circleOfRadius: 10)
+            ripple.strokeColor = color
+            ripple.lineWidth = 3
+            ripple.fillColor = .clear
+            ripple.position = point
+            ripple.alpha = 1.0
+            addChild(ripple)
+            
+            // Staggered animation
+            let delay = SKAction.wait(forDuration: TimeInterval(i) * 0.15)
+            let scale = SKAction.scale(to: 4.0, duration: 0.6)
+            let fade = SKAction.fadeOut(withDuration: 0.6)
+            let group = SKAction.group([scale, fade])
+            let remove = SKAction.removeFromParent()
+            
+            ripple.run(SKAction.sequence([delay, group, remove]))
+        }
     }
     
     func createSparkTexture() -> SKTexture {
